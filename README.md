@@ -1,9 +1,7 @@
 # Elephant Guard
 
-[![Latest Version](https://img.shields.io/packagist/v/tuupola/slim-basic-auth.svg?style=flat-square)](https://packagist.org/packages/tuupola/slim-basic-auth)
-[![Packagist](https://img.shields.io/packagist/dm/tuupola/slim-basic-auth.svg)](https://packagist.org/packages/tuupola/slim-basic-auth)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
-[![Build Status](https://img.shields.io/travis/tuupola/slim-basic-auth/3.x.svg?style=flat-square)](https://travis-ci.org/tuupola/slim-basic-auth)
+[![Software License](https://img.shields.io/badge/license-GPL%20v3.0-brightgreen.svg?style=flat-square)](LICENSE)
+[![Build Status](https://travis-ci.org/TraceSoftwareInternational/ElephantGuard.svg?branch=master)](https://travis-ci.org/TraceSoftwareInternational/ElephantGuard)
 
 This middleware is meant to apply a given [`AuthenticatorInterface`](http://authinterface.com) on a given set of routes. 
 
