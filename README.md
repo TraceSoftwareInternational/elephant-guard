@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/license-GPL%20v3.0-brightgreen.svg?style=flat-square)](LICENSE)
 [![Build Status](https://travis-ci.org/TraceSoftwareInternational/ElephantGuard.svg?branch=master)](https://travis-ci.org/TraceSoftwareInternational/ElephantGuard)
 
-This middleware is meant to apply a given [`AuthenticatorInterface`](http://authinterface.com) on a given set of routes. 
+This middleware is meant to apply a given [`AuthenticatorInterface`](src/ElephantGuard/AuthenticatorInterface.php) on a given set of routes. 
 
 It can be used with all frameworks using PSR-7 or PSR-15 style middlewares. It has been tested with [Slim Framework](http://www.slimframework.com/).
 
@@ -28,7 +28,7 @@ For more information, please refer to [Parameters](#Parameters).
 ## Parameters
 ## Authenticator
 
-The main purpose of this library is to test an incoming request against a class that implements `AuthenticatorInterface`
+The main purpose of this library is to test an incoming request against a class that implements [`AuthenticatorInterface`](src/ElephantGuard/AuthenticatorInterface.php)
 
 By example, you could use a random based authentication :
 
@@ -178,5 +178,5 @@ $ composer test
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/tuupola/slim-basic-auth/blob/3.x/LICENSE.md) for more information.
+The GNU General Public License v3.0 (GPL v3.0). Please see [License File](LICENSE) for more information.
 
