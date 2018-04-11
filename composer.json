@@ -1,5 +1,5 @@
 {
-    "name": "tracesoftware/elephant-guard",
+    "name": "tracesoftwareinternational/elephant-guard",
     "type": "library",
     "description": "PSR-7 and PSR-15 HTTP compliant middleware",
     "keywords": ["middleware", "auth", "psr-7", "psr-15"],
