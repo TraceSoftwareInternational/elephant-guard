@@ -1,7 +1,8 @@
 # Elephant Guard
 
 [![Software License](https://img.shields.io/badge/license-GPL%20v3.0-brightgreen.svg?style=flat-square)](LICENSE)
-[![Build Status](https://travis-ci.org/TraceSoftwareInternational/ElephantGuard.svg?branch=master)](https://travis-ci.org/TraceSoftwareInternational/ElephantGuard)
+[![Build Status](https://img.shields.io/travis/TraceSoftwareInternational/elephant-guard/master.svg?style=flat-square)](https://travis-ci.org/TraceSoftwareInternational/elephant-guard)
+[![Latest Version](https://img.shields.io/packagist/v/tracesoftwareinternational/elephant-guard.svg?style=flat-square)](https://travis-ci.org/TraceSoftwareInternational/elephant-guard)
 
 This middleware is meant to apply a given [`AuthenticatorInterface`](src/ElephantGuard/AuthenticatorInterface.php) on a given set of routes. 
 
@@ -16,7 +17,7 @@ Huge thanks to [Mika Tuupola](https://github.com/tuupola) for his greatly struct
 Install latest version using [composer](https://getcomposer.org/).
 
 ```
-$ composer require tracesoftware/elephgant-guard
+$ composer require tracesoftwareinternational/elephgant-guard
 ```
 
 ## Usage
