@@ -3,8 +3,8 @@ sudo: false
 language: php
 
 php:
-  - '7.1'
   - '7.2'
+  - '7.3'
   - nightly
 
 matrix:
@@ -12,16 +12,9 @@ matrix:
     allow_failures:
         - php: nightly
 
-stages:
-    - lint
-    - test
-
-before_script:
+install:
     - composer install
 
-jobs:
-    - stage: lint
-      script: composer lint
-    - stage: test
-      script: composer test
-
+script:
+  - composer lint
+  - composer test
