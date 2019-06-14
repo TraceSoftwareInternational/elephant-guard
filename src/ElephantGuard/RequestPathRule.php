@@ -26,7 +26,7 @@ final class RequestPathRule implements RuleInterface
 
     public function __invoke(ServerRequestInterface $request): bool
     {
-        $uri = "/" . $request->getUri()->getPath();
+        $uri = $request->getRequestTarget();
         $uri = preg_replace("#/+#", "/", $uri);
 
         foreach ($this->options["ignore"] as $ignoredPath) {
