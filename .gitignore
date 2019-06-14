@@ -2,3 +2,4 @@ vendor
 .idea
 
 .phplint-cache
+.phpunit.result.cache
