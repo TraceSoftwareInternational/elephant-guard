@@ -245,4 +245,27 @@ class HttpBasicAuthenticationTest extends TestCase
 
         $this->assertEquals(404, $response->getStatusCode());
     }
+
+    public function testGlobRoutes()
+    {
+        $request = (new ServerRequestFactory)->createServerRequest("GET", "https://example.com/get/product/1");
+
+        $response = (new ResponseFactory)->createResponse();
+
+        $auth = new ElephantGuard([
+            "authenticator" => new TrueAuthenticator(),
+            "path" => "/BackEnd",
+            "ignore" => [
+                '/get/product/viewer/**'
+            ]
+        ]);
+
+        $next = function (ServerRequestInterface $request, ResponseInterface $response) {
+            return $response->withStatus(201);
+        };
+
+        $response = $auth($request, $response, $next);
+
+        $this->assertEquals(201, $response->getStatusCode());
+    }
 }

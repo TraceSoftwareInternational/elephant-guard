@@ -31,7 +31,10 @@ final class RequestPathRule implements RuleInterface
 
         foreach ($this->options["ignore"] as $ignoredPath) {
             foreach ($this->options["path"] as $basePath) {
-                if (Glob::match($basePath.$ignoredPath, $uri)) {
+                $uriToCheck = 'http://'.$_SERVER['HTTP_HOST'].$uri;
+                $glob = 'http://'.$_SERVER['HTTP_HOST'].$basePath.$ignoredPath;
+
+                if (Glob::match($uriToCheck, $glob)) {
                     return false;
                 }
             }
