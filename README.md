@@ -111,6 +111,8 @@ $app->add(new \TraceSoftware\Middleware\ElephantGuard([
 ]));
 ```
 
+You may use the Glob syntax as supported by [webmozart/glob](https://github.com/webmozart/glob) to ignore routes with parameters in URL (like `/products/123456`)
+
 ### Before
 
 Before function is called only when authentication succeeds but before the next incoming middleware is called. You can use this to alter the request before passing it to the next incoming middleware in the stack. If it returns anything else than `\Psr\Http\Message\RequestInterface` the return value will be ignored.
