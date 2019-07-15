@@ -4,7 +4,7 @@
     "description": "PSR-7 and PSR-15 HTTP compliant middleware",
     "keywords": ["middleware", "auth", "psr-7", "psr-15"],
     "license": "GPL-3.0",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "authors": [
         {
             "name": "Matthieu Vion"
